@@ -25,7 +25,7 @@ When new files are added to SharePoint or OneDrive in Microsoft 365, it takes a 
 Instead of turning off external sharing entirely, you can address this issue by using a new PowerShell cmdlet. The cmdlet prevents guests from accessing newly added files until at least one Office DLP policy scans the content of the file. If the file has no sensitive content based on the DLP policy, then guests can access the file. If the policy identifies sensitive content, then guests will not be able to access the file. 
 
 > [!NOTE]
-> This cmdlet applies to newly added files in all SharePoint sites and OneDrive accounts. It doesn't block sharing if an existing file is changed.
+> This cmdlet applies to newly added files in all SharePoint sites and OneDrive accounts. It doesn't block sharing if an existing already shared file is changed.
 
 1. Make sure you have at least one DLP policy turned on for content located in SharePoint. [Learn how to create and turn on a DLP policy](/microsoft-365/compliance/create-test-tune-dlp-policy)
 
